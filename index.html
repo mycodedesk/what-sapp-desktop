@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png">
+    <title>WhatsApp</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: #00a884;
+        width: 100%;
+        height: 10rem;
+        /* margin-top: -35px; */
+        display: flex;
+        position: relative;
+      }
+      .header2 {
+        background-color: #dadcdc;
+        width: 100%;
+        height: 50rem;
+        position: relative;
+      }
+      .logo {
+        width: 3rem;
+        padding-top: 2rem;
+        padding-left: 6rem;
+      }
+      h6 {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        color: white;
+      }
+
+      .box {
+        left: 300px;
+        width: 55%;
+        height: 45rem;
+        box-shadow: 2px 2px 15px 1px darkslategray;
+        background-color: white;
+        position: absolute;
+        top: 55px;
+        display: flex;
+      }
+      .qr{
+        width: 20rem;
+        cursor: pointer;
+      }
+      .ss{
+        font-weight: 300;
+        font-size: 28px;
+        line-height: normal;
+        color: #41525d;
+      }
+      #uf{
+        color: #00a884;
+      }
+      #help{
+        color: red;
+        font-family:cursive;
+      }
+      .soo{
+        background-color: green;
+        border-radius: 10rem;
+        font-style: italic;
+        text-align: center;
+        color: white;
+        text-decoration: rgb(177, 222, 135);
+        cursor: pointer;
+      }
+     
+      
+    </style>
+  </head>
+  <body>
+    <div style="position: relative">
+      <div class="header">
+        <div>
+          <img
+            class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+            alt="logo" 
+          />
+        </div>
+
+        <div>
+          <h6 class="kk">WHATSAPP WEB</h6>
+        </div>
+      </div>
+      <div class="header2"></div>
+
+      <div class="box">
+        <div style="padding: 5rem;" >
+          <h4 class="ss"> Send message to  <br> <span id="uf">whatsapp web</span> </h4>
+           <p class="soo"> Scan OR Tap Qr </p>
+          
+          <a id="help" href="https://faq.whatsapp.com/web/download-and-installation/how-to-log-in-or-out?lang=en" style="text-decoration: none"> 
+            need help to get start
+          </a>
+        </div>
+        <div style="padding-top : 1rem;">
+          <img
+            class="qr"
+            src="frame.png"
+            alt="logo"
+            id="myButton" 
+          />
+          </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+        document. getElementById("myButton"). onclick = function () {
+        location. href = "https://web.whatsapp.com/";
+        };
+        </script>
+
+  </body>
+</html>
